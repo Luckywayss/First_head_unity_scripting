@@ -26,3 +26,4 @@ public class Actor : MonoBehaviour
         level = level + 1;
     }
 }
+
