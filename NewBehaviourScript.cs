@@ -127,4 +127,3 @@ public class NewBehaviourScript : MonoBehaviour
         Debug.Log(player.move());
     }
 }
-
