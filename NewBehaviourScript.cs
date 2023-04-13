@@ -10,25 +10,25 @@ public class NewBehaviourScript : MonoBehaviour
     {
         Debug.Log("Hello Unity!");
 
-        //1.º¯¼ö
+        //1.ë³€ìˆ˜
         int level = 5;
         float intelligence = 15.5f;
-        string playerName = "³ª¹ı»ç";
+        string playerName = "ë‚˜ë²•ì‚¬";
         bool isFullLevel = false;
 
-        /*Debug.Log("¿ë»çÀÇ ÀÌ¸§Àº?");
+        /*Debug.Log("ìš©ì‚¬ì˜ ì´ë¦„ì€?");
         Debug.Log(playerName);
-        Debug.Log("¿ë»çÀÇ ·¹º§Àº?");
+        Debug.Log("ìš©ì‚¬ì˜ ë ˆë²¨ì€?");
         Debug.Log(level);
-        Debug.Log("¿ë»çÀÇ Áö´ÉÀº?");
+        Debug.Log("ìš©ì‚¬ì˜ ì§€ëŠ¥ì€?");
         Debug.Log(intelligence);
-        Debug.Log("¿ë»ç´Â ¸¸·¾ÀÎ°¡?");
+        Debug.Log("ìš©ì‚¬ëŠ” ë§Œë ™ì¸ê°€?");
         Debug.Log(isFullLevel);*/
 
-        //2. ±×·ìÇü º¯¼ö
-        string[] monsters = { "ÇÏÇÇ", "¼­Å¥¹ö½º", "¾È´Ù¸®¿¤" };
+        //2. ê·¸ë£¹í˜• ë³€ìˆ˜
+        string[] monsters = { "í•˜í”¼", "ì„œíë²„ìŠ¤", "ì•ˆë‹¤ë¦¬ì—˜" };
 
-        /*Debug.Log("¸Ê¿¡ Á¸ÀçÇÏ´Â ¸ó½ºÅÍ");
+        /*Debug.Log("ë§µì— ì¡´ì¬í•˜ëŠ” ëª¬ìŠ¤í„°");
         Debug.Log(monsters[0]);
         Debug.Log(monsters[1]);
         Debug.Log(monsters[2]);*/
@@ -38,20 +38,20 @@ public class NewBehaviourScript : MonoBehaviour
         monstersLevel[1] = 12;
         monstersLevel[2] = 20;
 
-        /*Debug.Log("¸Ê¿¡ Á¸ÀçÇÏ´Â ¸ó½ºÅÍÀÇ ·¹º§");
+        /*Debug.Log("ë§µì— ì¡´ì¬í•˜ëŠ” ëª¬ìŠ¤í„°ì˜ ë ˆë²¨");
         Debug.Log(monstersLevel[0]);
         Debug.Log(monstersLevel[1]);
         Debug.Log(monstersLevel[2]);*/
 
         List<string> items = new List<string>();
-        items.Add("»ı¸í¹°¾à30");
-        items.Add("¸¶³ª¹°¾à30");
+        items.Add("ìƒëª…ë¬¼ì•½30");
+        items.Add("ë§ˆë‚˜ë¬¼ì•½30");
 
-        /*Debug.Log("°¡Áö°í ÀÖ´Â ¾ÆÀÌÅÛ");
+        /*Debug.Log("ê°€ì§€ê³  ìˆëŠ” ì•„ì´í…œ");
         Debug.Log(items[0]);
         Debug.Log(items[1]);*/
 
-        //3. ¿¬»êÀÚ
+        //3. ì—°ì‚°ì
         int exp = 1500;
 
         exp = 1500 + 320;
@@ -59,71 +59,72 @@ public class NewBehaviourScript : MonoBehaviour
         level = exp / 300;
         intelligence = level * 3.1f;
 
-        /*Debug.Log("¿ë»çÀÇ ÃÑ °æÇèÄ¡´Â?");
+        /*Debug.Log("ìš©ì‚¬ì˜ ì´ ê²½í—˜ì¹˜ëŠ”?");
         Debug.Log(exp);
-        Debug.Log("¿ë»çÀÇ ·¹º§Àº?");
+        Debug.Log("ìš©ì‚¬ì˜ ë ˆë²¨ì€?");
         Debug.Log(level);
-        Debug.Log("¿ë»çÀÇ ÈûÀº?");
+        Debug.Log("ìš©ì‚¬ì˜ í˜ì€?");
         Debug.Log(intelligence);*/
 
         int nextExp = 300 - (exp % 300);
-        /*Debug.Log("´ÙÀ½ ·¹º§±îÁö ³²Àº °æÇèÄ¡´Â?");
+        /*Debug.Log("ë‹¤ìŒ ë ˆë²¨ê¹Œì§€ ë‚¨ì€ ê²½í—˜ì¹˜ëŠ”?");
         Debug.Log(nextExp);*/
         
         int health = 30;
         int mana = 25;
         bool isBadCondition = health <= 50 || mana <= 20;
 
-        string condition = isBadCondition ? "³ª»İ" : "ÁÁÀ½";
-        /*Debug.Log("¿ë»çÀÇ »óÅÂ°¡ ³ª»Ş´Ï±î?" + condition);*/
+        string condition = isBadCondition ? "ë‚˜ì¨" : "ì¢‹ìŒ";
+        /*Debug.Log("ìš©ì‚¬ì˜ ìƒíƒœê°€ ë‚˜ì©ë‹ˆê¹Œ?" + condition);*/
         
-        //4. Å°¿öµå
+        //4. í‚¤ì›Œë“œ
 
-        //5. Á¶°Ç¹®
+        //5. ì¡°ê±´ë¬¸
 
-        //6. ¹İº¹¹®
+        //6. ë°˜ë³µë¬¸
         foreach(string Devil in monsters)
         {
-            //Debug.Log("ÀÌ Áö¿ª¿¡ ÀÖ´Â ¸ó½ºÅÍ : " + Devil);
+            //Debug.Log("ì´ ì§€ì—­ì— ìˆëŠ” ëª¬ìŠ¤í„° : " + Devil);
         }
 
-        //7. ÇÔ¼ö
+        //7. í•¨ìˆ˜
         //heal();
 
         /*for (int index = 0; index < monsters.Length; index++)
         {
-            Debug.Log("¿ë»ç´Â " + monsters[index] + "¿¡°Ô " +
+            Debug.Log("ìš©ì‚¬ëŠ” " + monsters[index] + "ì—ê²Œ " +
                  Battle(monstersLevel[index]));
         }*/
 
         void heal()
         {
             health += 10;
-            Debug.Log("ÈúÀ» ¹Ş¾Ò½À´Ï´Ù. " + health);
+            Debug.Log("íì„ ë°›ì•˜ìŠµë‹ˆë‹¤. " + health);
         }
 
         string Battle(int monstersLevel)
         {
             string result;
             if (level >= monstersLevel)
-                result = "ÀÌ°å½À´Ï´Ù.";
+                result = "ì´ê²¼ìŠµë‹ˆë‹¤.";
             else
-                result = "Á³½À´Ï´Ù.";
+                result = "ì¡ŒìŠµë‹ˆë‹¤.";
             return result;
         }
 
-        //8. Å¬·¡½º
+        //8. í´ë˜ìŠ¤
         Player player = new Player();
         player.id = 0;
-        player.name = "³ªÀü»ç";
-        player.title = "Çö¸íÇÑ";
+        player.name = "ë‚˜ì „ì‚¬";
+        player.title = "í˜„ëª…í•œ";
         player.strength = 2.4f  ;
-        player.weapon = "¸ñ°Ë";
+        player.weapon = "ëª©ê²€";
         Debug.Log(player.Talk());
         Debug.Log(player.HasWeapon());
 
         player.LevelUp();
-        Debug.Log(player.name + "ÀÇ ·¹º§Àº " + player.level + " ÀÔ´Ï´Ù.");
+        Debug.Log(player.name + "ì˜ ë ˆë²¨ì€ " + player.level + " ì…ë‹ˆë‹¤.");
         Debug.Log(player.move());
     }
 }
+
