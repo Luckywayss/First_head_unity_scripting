@@ -22,12 +22,12 @@ public class Move : MonoBehaviour
                                target, ref velo, 0.1f);*/
 
 
-        //3.Lerp (¼±Çü º¸°£)
+        //3.Lerp (Â¼Â±Ã‡Ã¼ ÂºÂ¸Â°Â£)
         /*transform.position =
             Vector3.Lerp(transform.position,
                          target, 0.01f);*/
 
-        //4.SLerp (±¸¸é ¼±Çü º¸°£)
+        //4.SLerp (Â±Â¸Â¸Ã© Â¼Â±Ã‡Ã¼ ÂºÂ¸Â°Â£)
         transform.position =
             Vector3.Slerp(transform.position,
                          target, 0.001f);
